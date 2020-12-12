@@ -1,0 +1,147 @@
+<h2>Student Registration</h2>
+
+<table>
+    <tr>
+        <td>
+            <label>Student Name:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="user.studentName" class="form-control" placeholder="Student Name"
+                    required>
+            </div>
+        </td>
+
+    </tr>
+    <tr>
+
+        <td>
+            <label>Student Roll Number:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="user.rollNumber" class="form-control" placeholder="Student Roll Number"
+                    required>
+            </div>
+        </td>
+    </tr>
+    <tr>
+
+        <td>
+            <label>Student Phone Number:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" [(ngModel)]="user.phoneNumber" class="form-control"
+                    placeholder="Student Phone Number" required>
+            </div>
+        </td>
+
+    </tr>
+    <tr>
+
+        <td>
+            <label>Email ID:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="email" [(ngModel)]="user.email" class="form-control" placeholder="email id" required>
+            </div>
+        </td>
+    </tr>
+    <tr>
+
+        <td>
+            <label>UserName:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="user.userName" class="form-control" placeholder="User Name" required>
+            </div>
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <label>Password:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="password" [(ngModel)]="user.password" class="form-control" placeholder="Password" required>
+            </div>
+        </td>
+
+    </tr>
+    <tr>
+
+        <td>
+            <label>Branch</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <select class="custom-select" [(ngModel)]="user.branch">
+                    <option value="" disabled>Choose your city</option>
+                    <option>CSE</option>
+                    <option>MECH</option>
+                    <option>ECE</option>
+                    <option>CSIT</option>
+                    <option>CIVIL</option>
+                </select>
+            </div>
+        </td>
+
+    </tr>
+
+    <tr>
+
+        <td>
+            <label>Accademic Year</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <select class="custom-select" [(ngModel)]="user.accademic">
+                    <option value="" disabled>Choose your city</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+
+                </select>
+            </div>
+        </td>
+
+    </tr>
+    <tr>
+
+        <td>
+            <label>Gender</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input id="male" type="radio" class="custom-control-input" value="male" [(ngModel)]="user.gender">
+                <label class="custom-control-label" for="male">Male</label>
+
+                <input id="female" type="radio" class="custom-control-input" value="female" [(ngModel)]="user.gender">
+                <label class="custom-control-label" for="female">Female</label>
+            </div>
+        </td>
+
+    </tr>
+    <tr>
+
+        <td>
+            <div class="form-group">
+                <button class="btn btn-success btn-lg btn-block" (click)="registerUser()">Register</button>
+            </div>
+        </td>
+
+        <td>
+            <div class="form-group">
+                <img *ngIf="loading" class="pl-3"
+                    src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                <a routerLink="/login" class="btn btn-link">Already User</a>
+            </div>
+        </td>
+
+    </tr>
+</table>

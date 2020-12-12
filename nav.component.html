@@ -1,0 +1,13 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">{{apptitle}}</a>
+    <nav>
+
+      <ul>
+        <li><a *ngFor="let menudetails of menuarray" routerLink="{{menudetails.menulink}}">{{menudetails.menuname}}</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</header>

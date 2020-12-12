@@ -1,0 +1,117 @@
+<h2>Route Creation </h2>
+
+<table>
+    <tr>
+        <td>
+            <label>Vehicle Registration Number:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="vehicle.vehiclenumber" class="form-control"
+                    placeholder="Vehicle Registration Number" required>
+            </div>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+            <label>Driver Name:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="vehicle.drivername" class="form-control" placeholder="Driver Name"
+                    required>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Driver Number:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="vehicle.drivernumber" class="form-control" placeholder="Driver Number"
+                    required>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Bus Incharge Name:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="vehicle.businchrgename" class="form-control"
+                    placeholder="Bus Incharge Name" required>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Bus Inchrge Email:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="vehicle.businchrgeemail" class="form-control"
+                    placeholder="Bus Inchrge Email:" required>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Bus Inchrge Number:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="vehicle.businchrgenumber" class="form-control"
+                    placeholder="Bus Inchrge Number:" required>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Bus Inchrge Password:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="password" [(ngModel)]="vehicle.businchrgepassword" class="form-control"
+                    placeholder="Bus Inchrge Password:" required>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Bus Capcity:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="vehicle.buscapacity" class="form-control" placeholder="Bus Capacity:"
+                    required>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Bus Satarting Point:</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="vehicle.busstratingpoint" class="form-control"
+                    placeholder="Bus Starting Point:" required>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="form-group">
+                <button class="btn btn-success btn-lg btn-block" (click)="createroute()">Create Route</button>
+            </div>
+        </td>
+        <td></td>
+    </tr>
+
+
+</table>
